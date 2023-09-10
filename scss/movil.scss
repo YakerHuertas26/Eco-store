@@ -1,0 +1,112 @@
+$primary-color:#FFEFE7;
+$secundary-color:#FFDAC6;
+$tertiary-color:#BABD8D;
+$cauterny-color: #BABD8D;
+
+$primary-text-color:#7C6A0A;
+$font-stackl: 'IBM Plex Sans', sans-serif;
+
+@mixin button{
+    button{
+        background: none;
+        border: none;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: $primary-color;
+    font-family: $font-stackl;
+    color: $primary-text-color;
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 40px
+}
+nav{
+    align-self: center;
+    margin: 0 auto;
+    height:37px ;
+    width: 85%;
+    min-width: 290px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+
+    .navbar__logo{
+        font-size: 2rem;
+        font-weight: 400; 
+        line-height: 2.6rem; 
+    }
+    @include button;
+    // button{
+    //     border: none;
+    //     background:none;
+    // }
+    
+}
+
+.settion-one{
+    min-width: 280px;
+    width: 290px;
+    height: 554px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    flex-direction: column
+;
+
+    .settion-one__img{
+        background-image: url("../Asset/img-20230823T195321Z-001/img/main-2.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:contain;
+        width: 100%;
+        height: 360px;
+    }
+    
+}
+.settion-one__info{
+    display: flex;
+    flex-direction: column;
+
+
+    .info__encabezado{
+        margin-top: 11px;
+        font-size: 2.8rem;
+        font-weight: 600;
+        line-height: 3.6rem;
+    }
+    .info__p{
+        margin-top: 19px;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.5rem;
+        text-align: justify;
+        margin-bottom: 18px;
+    }
+    @include button;
+    .info__button{
+        height: 41px;
+        width: 150px;
+        background-color:#FA9500;
+        border: none;
+        border-radius: 20px;
+        color: #FFFFFF;
+        margin: 0 auto;
+    }
+}
+
+
+
+

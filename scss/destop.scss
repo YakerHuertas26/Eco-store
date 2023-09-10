@@ -1,0 +1,250 @@
+// $primary-color:#FFEFE7;
+$secundary-color:#FFDAC6;
+// $tertiary-color:#BABD8D;
+$cauterny-color: #BABD8D;
+$primary-text-color:#7C6A0A;
+// $font-stackl: 'IBM Plex Sans', sans-serif;
+
+@mixin flex-center ($direction, $align,$justi){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justi;
+    align-items:$align;  
+}
+header{
+    height: 90px
+}
+nav{
+    height: 51px;
+    min-width: px;
+    // uso de NESTING
+    
+    svg{
+        height: 40px;
+        width: 40px;
+    }
+    .navbar__logo{
+        font-size: 3rem;
+        font-weight: 400; 
+        line-height: 3.9rem; 
+    }
+
+    .navbar__button{
+        height: 100%;
+        width: 190px;
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+    }
+    
+}
+.settion-one{
+    width: 95%;
+    height: 500px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+
+    .settion-one__info{
+        order: 1;
+        width: 45%;
+        height: 100%;
+        
+        .info__encabezado{
+            font-size: 4rem;
+            font-weight: 600;
+            line-height: 4.8rem;
+            margin-bottom: 41px;
+        }
+        .info__p{
+            max-width: 493px;
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 2.2rem;
+            margin-bottom: 90px;
+        }
+    }
+    .settion-one__img{
+        order: 2;
+        height: 100%;
+        width: 50%;
+    }
+    .info__button{
+        margin: 0 0;
+        font-size: 1.8rem;
+        width: 200px;
+        &:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    }
+}
+
+
+h3{
+    font-size: 2rem;
+    line-height: 4rem;
+    font-weight: 400;
+}
+
+
+p{
+    font-size: 1.5rem;  
+}
+h2{
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 400;
+    margin-left: 100px;
+}
+.cards{
+    .cards-salud{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin:  0 auto;
+        align-self: center;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 50px;
+        row-gap: 50px;
+        width: 95%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .cards-salud__settion{
+        height: 480px;
+        width: 300px;
+        // margin: 25px;
+        
+        border-radius: 8px;
+        background-color: $secundary-color;
+        }
+        .section__favorito{
+            display: flex;
+            justify-content: right;
+            margin: 14px;
+            padding-top: 14px;
+        }
+    
+        .cards-salud__content{
+            width: 75%;
+            margin: 0 auto;
+            .cards_img{
+                height: 290px;
+                width: 100%;
+                
+            }
+        }
+ 
+    .cards-hogar__content{
+    @extend .cards-salud;
+    .cards-salud__settion{
+        background-color:$cauterny-color ;
+        color: #FFFFFF;
+        ;
+    }
+    }
+
+}
+.section-nosotros{
+    .nosotros-contnet{
+        margin-top: 90px;
+        margin-bottom: 150px;
+        img{
+            object-fit: cover
+        }
+        p{
+            margin-left: 20px
+        }
+        @include flex-center(row,center , space-evenly);
+        .nosotros__planet{
+            @include flex-center(row,center , space-evenly);
+            width: 30%;
+        }
+        .nosotros__focus{
+            @extend .nosotros__planet;
+        }
+
+    }
+}   
+.section-galeria{
+    margin: 0 auto;
+    width: 100%;
+    .gallery_img{
+        height: 500px;
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 50px;
+        padding-bottom: 80px;
+        @include flex-center(row,center , space-evenly );
+        
+        img{
+            height: 100%;
+            width: 340px;
+            border-radius: 16px;
+            object-fit: cover;
+            &:hover{
+                transform: scale(1.1);
+                cursor: pointer;
+            }
+        }
+    }
+}
+.section-ubicanos{
+    .ubicanos__mapa{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        @include flex-center(row,center , space-evenly);
+        width: 90%;
+        margin: 0 auto;
+        img{
+            width: 90%;
+        }
+        
+        
+    }
+    .ubicanos__direction{
+        padding-bottom: 50px;
+        h3,p{
+        margin-left: 90px;
+        color:#E86424;
+        margin-top: 20px
+        ;
+            
+    }
+    
+    }
+}
+a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: IBM Plex Sans;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 26px;
+    
+    
+
+}
+ul{
+    list-style: none;
+    
+}
+footer{
+    padding-left: 50px;
+    background-color:#FA9500;
+    color: #FFFFFF;
+    .link{
+        @include flex-center(column ,left, space-evenly);
+    li{
+        margin-top: 20px;
+    }
+
+    }
+    .redes{
+        margin: 0 auto;
+        padding-bottom: 30px;
+        width: 300px;
+        @include flex-center(row ,center, space-evenly)
+    }
+}

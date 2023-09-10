@@ -1,0 +1,228 @@
+header {
+  height: 90px;
+}
+
+nav {
+  height: 51px;
+  min-width: px;
+}
+nav svg {
+  height: 40px;
+  width: 40px;
+}
+nav .navbar__logo {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 3.9rem;
+}
+nav .navbar__button {
+  height: 100%;
+  width: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.settion-one {
+  width: 95%;
+  height: 500px;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 100px;
+}
+.settion-one .settion-one__info {
+  order: 1;
+  width: 45%;
+  height: 100%;
+}
+.settion-one .settion-one__info .info__encabezado {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 4.8rem;
+  margin-bottom: 41px;
+}
+.settion-one .settion-one__info .info__p {
+  max-width: 493px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+  margin-bottom: 90px;
+}
+.settion-one .settion-one__img {
+  order: 2;
+  height: 100%;
+  width: 50%;
+}
+.settion-one .info__button {
+  margin: 0 0;
+  font-size: 1.8rem;
+  width: 200px;
+}
+.settion-one .info__button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+h3 {
+  font-size: 2rem;
+  line-height: 4rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 400;
+  margin-left: 100px;
+}
+
+.cards .cards-salud, .cards .cards-hogar__content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
+  row-gap: 50px;
+  width: 95%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.cards .cards-salud__settion {
+  height: 480px;
+  width: 300px;
+  border-radius: 8px;
+  background-color: #FFDAC6;
+}
+.cards .section__favorito {
+  display: flex;
+  justify-content: right;
+  margin: 14px;
+  padding-top: 14px;
+}
+.cards .cards-salud__content {
+  width: 75%;
+  margin: 0 auto;
+}
+.cards .cards-salud__content .cards_img {
+  height: 290px;
+  width: 100%;
+}
+.cards .cards-hogar__content .cards-salud__settion {
+  background-color: #BABD8D;
+  color: #FFFFFF;
+}
+
+.section-nosotros .nosotros-contnet {
+  margin-top: 90px;
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.section-nosotros .nosotros-contnet img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-nosotros .nosotros-contnet p {
+  margin-left: 20px;
+}
+.section-nosotros .nosotros-contnet .nosotros__planet, .section-nosotros .nosotros-contnet .nosotros__focus {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 30%;
+}
+.section-galeria {
+  margin: 0 auto;
+  width: 100%;
+}
+.section-galeria .gallery_img {
+  height: 500px;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.section-galeria .gallery_img img {
+  height: 100%;
+  width: 340px;
+  border-radius: 16px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section-galeria .gallery_img img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.section-ubicanos .ubicanos__mapa {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.section-ubicanos .ubicanos__mapa img {
+  width: 90%;
+}
+.section-ubicanos .ubicanos__direction {
+  padding-bottom: 50px;
+}
+.section-ubicanos .ubicanos__direction h3, .section-ubicanos .ubicanos__direction p {
+  margin-left: 90px;
+  color: #E86424;
+  margin-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: IBM Plex Sans;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+ul {
+  list-style: none;
+}
+
+footer {
+  padding-left: 50px;
+  background-color: #FA9500;
+  color: #FFFFFF;
+}
+footer .link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: left;
+}
+footer .link li {
+  margin-top: 20px;
+}
+footer .redes {
+  margin: 0 auto;
+  padding-bottom: 30px;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}/*# sourceMappingURL=destop.css.map */
